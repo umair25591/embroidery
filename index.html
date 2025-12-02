@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StitchCraft | The Premium Digitizing Studio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="sewing-container">
+        <svg class="sewing-path" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path id="threadLine" 
+                d="M0,160 C320,300, 420,0, 740,160 C1060,320, 1120,0, 1440,160" 
+                fill="none" 
+                stroke="#00c6ff" 
+                stroke-width="2" />
+        </svg>
+        <div class="needle-head"></div>
+    </div>
+
+    <div class="ambient-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <nav class="glass" id="navbar">
+        <div class="logo">StitchCraft.io</div>
+        <div class="nav-items">
+            <a class="active" href="#services">Home</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#about">About</a>
+        </div>
+        <button class="btn-glass" style="visibility: hidden;">Client Portal <i class="fa-solid fa-arrow-right"
+                style="margin-left: 8px; font-size: 0.8rem;"></i></button>
+    </nav>
+
+    <section class="hero-split reveal">
+        <div class="hero-container">
+
+            <div class="hero-text-side">
+                <div class="badge-pill">
+                    <i class="fa-solid fa-bolt"></i> Fast 4-Hour Turnaround
+                </div>
+
+                <h1>Flawless Digitizing That Brings Your Designs to <span class="gradient-text">Life</span></h1>
+
+                <p>Stop relying on auto-digitizers. We deliver human-verified, production-ready files in <span
+                        class="highlight">under 4 hours.</span></p>
+
+                <div class="cta-wrapper">
+                    <button class="btn-glass primary-btn">
+                        Place Quick Order <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <div class="trust-rating">
+                        <div class="stars">★★★★★</div>
+                        <span>Trusted by 500+ Brands</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual-side">
+                <div class="glass-frame" id="comparisonContainer">
+
+                    <div class="img-layer before">
+                        <img src="https://www.sassydigitizing.com/wp-content/uploads/2025/11/Before.png" alt="Flat Vector">
+                        <div class="layer-label glass" style="right: 30px; left: auto; color: #00c6ff;">Original Vector</div>
+                    </div>
+
+                    <div class="img-layer after" id="afterLayer">
+                        <img src="https://www.sassydigitizing.com/wp-content/uploads/2025/11/Before-1-1.png" alt="Digitized Embroidery">
+                        <div class="layer-label glass" style="right: 30px; left: auto; color: #00c6ff;">StitchCraft
+                            Result</div>
+                    </div>
+
+                    <div class="scroller-handle" id="scroller">
+                        <div class="scroller-line"></div>
+                        <div class="scroller-icon glass">
+                            <i class="fa-solid fa-arrows-left-right"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="floating-badge badge-1 glass animate-float">
+                    <i class="fa-solid fa-check-circle" style="color: #00ff88;"></i> Quality Verified
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="services-section" id="services">
+        <div class="section-title reveal">
+            <h2>Our Expertise</h2>
+            <p>Covering every aspect of the embroidery & print industry.</p>
+        </div>
+
+        <div class="grid-container">
+
+            <div class="service-card glass tilt-card reveal">
+                <div class="card-icon"><i class="fa-solid fa-shirt"></i></div>
+                <h3>Apparel Digitizing</h3>
+                <p>Optimized specifically for flats. We adjust pull compensation based on your fabric type (Pique,
+                    Cotton, Polyester).</p>
+                <div class="detail-tags">
+                    <span class="tag">Left Chest</span>
+                    <span class="tag">Jacket Back</span>
+                    <span class="tag">Sleeve Logo</span>
+                    <span class="tag">Towel/Blanket</span>
+                </div>
+            </div>
+
+            <div class="service-card glass tilt-card reveal">
+                <div class="card-icon"><i class="fa-solid fa-hat-cowboy-side"></i></div>
+                <h3>Headwear & 3D Puff</h3>
+                <p>The hardest skill in the game. We create designs that sew "center-out" to prevent cap distortion,
+                    with thick 3D foam settings.</p>
+                <div class="detail-tags">
+                    <span class="tag">Structured Caps</span>
+                    <span class="tag">Beanies</span>
+                    <span class="tag">3D Foam/Puff</span>
+                    <span class="tag">Bucket Hats</span>
+                </div>
+            </div>
+
+            <div class="service-card glass tilt-card reveal">
+                <div class="card-icon"><i class="fa-solid fa-pen-fancy"></i></div>
+                <h3>Vector Conversion</h3>
+                <p>Transform pixelated JPEGs into infinitely scalable vector art. Perfect for screen printing and vinyl
+                    cutting.</p>
+                <div class="detail-tags">
+                    <span class="tag">Raster to Vector</span>
+                    <span class="tag">Color Separation</span>
+                    <span class="tag">Redraw</span>
+                    <span class="tag">AI / EPS / SVG</span>
+                </div>
+            </div>
+
+            <div class="service-card glass tilt-card reveal">
+                <div class="card-icon"><i class="fa-solid fa-certificate"></i></div>
+                <h3>Custom Physical Patches</h3>
+                <p>We manufacture and ship physical patches. From standard embroidered borders to modern PVC rubber
+                    styles.</p>
+                <div class="detail-tags">
+                    <span class="tag">Iron-on</span>
+                    <span class="tag">Velcro Backing</span>
+                    <span class="tag">PVC / Rubber</span>
+                    <span class="tag">Woven Labels</span>
+                    <span class="tag">Chenille</span>
+                </div>
+            </div>
+
+            <div class="service-card glass tilt-card reveal">
+                <div class="card-icon"><i class="fa-solid fa-gem"></i></div>
+                <h3>Specialty Techniques</h3>
+                <p>For high-fashion brands requiring unique textures and mixed media embroidery styles.</p>
+                <div class="detail-tags">
+                    <span class="tag">Applique</span>
+                    <span class="tag">Sequin</span>
+                    <span class="tag">Cross-Stitch</span>
+                    <span class="tag">Gradient Blending</span>
+                </div>
+            </div>
+
+            <div class="service-card glass tilt-card reveal">
+                <div class="card-icon"><i class="fa-solid fa-headset"></i></div>
+                <h3>Agency Support</h3>
+                <p>White-label services for print shops. We act as your back-office digitizing department.</p>
+                <div class="detail-tags">
+                    <span class="tag">Rush Delivery (2hr)</span>
+                    <span class="tag">Flat Rate Pricing</span>
+                    <span class="tag">Bulk Discounts</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="why-us-section">
+        <div class="glow-spot" style="top: 20%; left: 0;"></div>
+
+        <div class="section-title reveal">
+            <h2>The StitchCraft Advantage</h2>
+            <p>Why 500+ Agencies trust us with their reputation.</p>
+        </div>
+
+        <div class="bento-grid">
+
+            <div class="bento-card span-2 glass reveal">
+                <div class="bento-content">
+                    <div class="icon-glow"><i class="fa-solid fa-bolt"></i></div>
+                    <h3>Lightning Fast Turnaround</h3>
+                    <p>We work while you sleep. Standard delivery in 6 hours. Rush delivery in just 2 hours.</p>
+                    <!-- <div class="speed-visual">
+                        <div class="bar-label">
+                            <span>Competitors (24hr)</span>
+                            <span>StitchCraft (4hr)</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill competitor"></div>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill us"></div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="bento-card span-1 row-2 glass reveal">
+                <div class="bento-content centered">
+                    <div class="scanner-line"></div> <i class="fa-solid fa-fingerprint huge-icon"></i>
+                    <h3>100% Human Verified</h3>
+                    <p>No auto-digitizing software. Every stitch is plotted by a human expert and tested on our in-house
+                        Tajima machines before delivery.</p>
+                    <div class="verified-badge">
+                        <i class="fa-solid fa-check"></i> Quality Passed
+                    </div>
+                </div>
+            </div>
+
+            <div class="bento-card span-1 glass reveal">
+                <div class="bento-content">
+                    <div class="icon-glow purple"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Secure Cloud Portal</h3>
+                    <p>Never lose a file. All your orders are archived forever in your encrypted dashboard.</p>
+                </div>
+            </div>
+
+            <div class="bento-card span-1 glass reveal">
+                <div class="bento-content">
+                    <div class="icon-glow green"><i class="fa-solid fa-money-bill-wave"></i></div>
+                    <h3>Flat-Rate Pricing</h3>
+                    <p>No stitch-count surprises. Simple flat rates for standard logos.</p>
+                </div>
+            </div>
+
+            <div class="bento-card span-3 glass reveal" style="overflow: hidden;">
+                <p style="text-align: center; color: var(--text-gray); margin-bottom: 15px; font-size: 0.9rem;">
+                    COMPATIBLE WITH ALL MACHINES</p>
+                <div class="marquee-wrapper">
+                    <div class="marquee-content">
+                        <span>.DST</span> <span>.PES</span> <span>.EMB</span> <span>.JEF</span> <span>.EXP</span>
+                        <span>.XXX</span> <span>.VP3</span> <span>.HUS</span>
+                        <span>.DST</span> <span>.PES</span> <span>.EMB</span> <span>.JEF</span> <span>.EXP</span>
+                        <span>.XXX</span> <span>.VP3</span> <span>.HUS</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
