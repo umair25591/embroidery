@@ -1,57 +1,47 @@
 :root {
     /* --- BRAND COLORS --- */
-    --primary: #FF6B6B;
-    /* Vibrant Coral/Salmon */
-    --primary-rgb: 255, 107, 107;
+    --primary: #D90368;        /* Vibrant Magenta (Berry) */
+    --primary-rgb: 217, 3, 104;
 
-    --secondary: #4ECDC4;
-    /* Electric Teal */
-    --secondary-rgb: 78, 205, 196;
+    --secondary: #541388;      /* Deep Violet */
+    --secondary-rgb: 84, 19, 136;
 
     /* --- ACCENT COLORS --- */
-    --accent-purple: #FFE66D;
-    /* Sunshine Yellow (replacing purple for this vibe) */
-    --accent-purple-rgb: 255, 230, 109;
+    --accent-purple: #FFD400;  /* Bright Gold (Thread color) */
+    --accent-purple-rgb: 255, 212, 0;
 
-    --accent-neon: #FF6B6B;
-    --accent-neon-rgb: 255, 107, 107;
+    --accent-neon: #00E5FF;    /* Cyan highlight */
+    --accent-neon-rgb: 0, 229, 255;
 
-    --accent-success: #3A5A40;
-    /* Hunter Green (Organic/Premium look) */
-    --accent-success-rgb: 58, 90, 64;
+    --accent-success: #2EC4B6; /* Teal Green */
+    --accent-success-rgb: 46, 196, 182;
 
-    --accent-gold: #ffb500;
+    --accent-gold: #FFD400;
 
     /* --- BACKGROUNDS --- */
-    --bg-dark: #F7FFF7;
-    /* Minty White (Light Mode Base) */
-    --orb-1-color: #FFE66D;
-    /* Soft Yellow Blob */
-    --orb-2-color: #4ECDC4;
-    /* Teal Blob */
-    --orb-3-color: #FF6B6B;
-    /* Coral Blob */
+    --bg-dark: #FDF8F5;        /* Warm Off-White (Cream) */
+    
+    --orb-1-color: #FFD400;    /* Gold Blob */
+    --orb-2-color: #D90368;    /* Magenta Blob */
+    --orb-3-color: #541388;    /* Violet Blob */
 
     /* --- TEXT COLORS --- */
-    --text-white: #292F36;
-    /* Dark Charcoal (Since BG is now light) */
-    --text-gray: #5e6572;
-    /* Medium Gray */
-
+    --text-white: #1A1A1D;     /* Soft Black */
+    --text-gray: #4A4A52;      /* Dark Slate */
     --text-light: white;
 
     /* --- GRADIENTS --- */
-    --main-gradient: linear-gradient(135deg, var(--primary) 0%, #FF8E53 100%);
+    --main-gradient: linear-gradient(135deg, var(--primary) 0%, #89023E 100%);
     --text-gradient: linear-gradient(to right, var(--primary), var(--secondary));
-    --logo-gradient: linear-gradient(to right, var(--primary), var(--secondary));
-    --card-shine: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.05), transparent);
+    --logo-gradient: linear-gradient(to right, var(--primary), var(--accent-purple));
+    --card-shine: linear-gradient(to right, transparent, rgba(217, 3, 104, 0.05), transparent);
 
-    /* --- GLASSMORPHISM (Darker glass for light BG) --- */
-    --glass-bg: rgba(255, 255, 255, 0.6);
-    --glass-border: rgba(255, 255, 255, 0.8);
-    --glass-highlight: rgba(255, 255, 255, 0.9);
+    /* --- GLASSMORPHISM --- */
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.9);
+    --glass-highlight: rgba(255, 255, 255, 0.95);
 
-    --tag-bg: rgb(0 0 0 / 5%);
+    --tag-bg: rgba(217, 3, 104, 0.05);
 }
 
 * {
@@ -1944,7 +1934,7 @@ nav {
     padding: 80px 5% 30px;
     margin-top: 80px;
     color: var(--text-white);
-    border-top: 1px solid grey;
+    border-top: 1px solid #80808000;
 }
 
 
@@ -2162,12 +2152,6 @@ nav {
         text-align: center;
     }
 }
-
-
-
-
-
-
 
 
 /* --- GLOBAL RESPONSIVE --- */
