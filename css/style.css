@@ -2090,7 +2090,8 @@ nav {
 
 .footer-contact-list li {
     display: flex;
-    align-items: center; /* Aligns icon and text */
+    align-items: center;
+    /* Aligns icon and text */
     gap: 15px;
 }
 
@@ -2098,9 +2099,11 @@ nav {
 .icon-circle {
     width: 40px;
     height: 40px;
-    background: rgba(var(--primary-rgb), 0.1); /* Light tint of theme color */
+    background: rgba(var(--primary-rgb), 0.1);
+    /* Light tint of theme color */
     color: var(--primary);
-    border-radius: 50%; /* Circle shape */
+    border-radius: 50%;
+    /* Circle shape */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2128,10 +2131,11 @@ nav {
     font-weight: 600;
 }
 
-.contact-text a, 
+.contact-text a,
 .contact-text span {
     font-size: 0.95rem;
-    color: var(--text-white); /* Dark Charcoal */
+    color: var(--text-white);
+    /* Dark Charcoal */
     text-decoration: none;
     font-weight: 500;
     transition: 0.3s;
