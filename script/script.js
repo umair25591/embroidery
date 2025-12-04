@@ -212,3 +212,79 @@ $(document).ready(function () {
         window.addEventListener('touchend', stopDrag);
     }
 });
+
+$(document).ready(function () {
+    // Open Lightbox
+    $('.icon-btn').click(function (e) {
+        e.stopPropagation();
+
+        const imgSrc = $(this).closest('.gallery-item').find('img').attr('src');
+
+        $('#lightbox-img').attr('src', imgSrc);
+
+        $('#lightbox').fadeIn(300).css('display', 'flex');
+
+        $('body').css('overflow', 'hidden');
+    });
+
+    $('.lightbox-close, .lightbox').click(function (e) {
+        // Prevent closing if clicking on the image itself
+        if (e.target.id !== 'lightbox-img') {
+
+            // fadeOut accepts a "callback" function that runs when animation finishes
+            $('#lightbox').fadeOut(300, function () {
+                // FIX: Wipe the source URL so the next time it opens, it's clean
+                $('#lightbox-img').attr('src', '');
+            });
+
+            $('body').css('overflow', 'auto'); // Re-enable scrolling
+        }
+    });
+
+    // --- 6. FAQ ACCORDION LOGIC ---
+    $('.faq-card').click(function () {
+        const item = $(this).parent('.faq-item');
+
+        // If clicking the one that is already open, close it
+        if (item.hasClass('active')) {
+            item.removeClass('active');
+            item.find('.faq-body').css('max-height', '0');
+        } else {
+            // Close all others first (Accordion style)
+            $('.faq-item').removeClass('active');
+            $('.faq-body').css('max-height', '0');
+
+            // Open the clicked one
+            item.addClass('active');
+            // We set max-height to the scrollHeight (actual height of content)
+            const content = item.find('.faq-body')[0];
+            item.find('.faq-body').css('max-height', content.scrollHeight + "px");
+        }
+    });
+
+
+    // --- 7. FORM SUBMISSION (Visual Only) ---
+    $('#contactForm').submit(function(e) {
+        e.preventDefault();
+        const btn = $(this).find('button');
+        const originalText = btn.html();
+        
+        // Change button to loading state
+        btn.html('<i class="fa-solid fa-spinner fa-spin"></i> Sending...');
+        
+        // Simulate delay
+        setTimeout(function() {
+            btn.html('<i class="fa-solid fa-check"></i> Sent Successfully!');
+            btn.css('background', 'var(--accent-success)');
+            
+            // Reset form
+            $('#contactForm')[0].reset();
+            
+            // Revert button after 3 seconds
+            setTimeout(() => {
+                btn.html(originalText);
+                btn.css('background', ''); // Reset to gradient
+            }, 3000);
+        }, 1500);
+    });
+})
